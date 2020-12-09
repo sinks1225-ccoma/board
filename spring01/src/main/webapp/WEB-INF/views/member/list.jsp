@@ -8,7 +8,9 @@
 	<jsp:include page="../include/header.jsp"></jsp:include>
 	
 	<h2>회원목록</h2>
-	<input type="button" value="회원등록" onclick="location.href='/member/write'" >
+	<div class="new_btn">
+		<a href="/member/write">신규회원등록</a>
+	</div>
 	<table border="1" width="700px">
 		<tr>
 			<td>아이디</td>
