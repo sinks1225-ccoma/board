@@ -12,8 +12,7 @@ public class MainController {
 	
 	@RequestMapping("/")
 	public String main(Model model) {
-		model.addAttribute("name", "홍길동");
-		model.addAttribute("message", "홈페이지 방문");
+		model.addAttribute("message", "CCOMA");
 		return "main";
 	}
 	

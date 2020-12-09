@@ -1,12 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
 <body>
+	<!-- header include -->
+	<jsp:include page="../include/header.jsp"></jsp:include>
+	
 	<h2>회원등록폼</h2>
 	<form name="form1" method="post" action="/member/insert">
 		<table border="1" width="400px">

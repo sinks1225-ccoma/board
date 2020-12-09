@@ -2,10 +2,10 @@
     pageEncoding="UTF-8"%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
 </head>
 <body>
+	<!-- header include -->
+	<jsp:include page="../include/header.jsp"></jsp:include>
 	<form action="point_result" method="post">
 		이름<input type="text" name="name"><br>
 		국어<input type="text" name="kor"><br>

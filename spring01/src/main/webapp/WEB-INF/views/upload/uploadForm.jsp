@@ -12,7 +12,7 @@
 </style>
 </head>
 <body>
-	<%@ include file="../include/menu.jsp" %>
+	<%@ include file="../include/header.jsp" %>
 	<form id="form1" action="/upload/uploadForm" method="post" enctype="multipart/form-data" target="iframe1">
 		<input type="file" name="file">
 		<input type="submit" value="업로드">

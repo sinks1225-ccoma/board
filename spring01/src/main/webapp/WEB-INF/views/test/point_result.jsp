@@ -2,10 +2,10 @@
     pageEncoding="UTF-8"%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
 </head>
 <body>
+	<!-- header include -->
+	<jsp:include page="../include/header.jsp"></jsp:include>
 	이름 : ${dto.name }<br>
 	국어 : ${dto.kor }<br>
 	영어 : ${dto.eng }<br>

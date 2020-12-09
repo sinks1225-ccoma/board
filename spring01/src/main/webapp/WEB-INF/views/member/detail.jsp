@@ -2,28 +2,11 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-	$(function(){
-		$("#btnUpdate").click(function(){
-			document.form1.action = "/member/update";
-			document.form1.submit();
-		});
-		$("#btnDelete").click(function(){
-			if(confirm("삭제하시겠습니까?")) {
-				document.form1.action = "/member/delete";
-				document.form1.submit();
-			}
-		});
-	});
-</script>
-<title>Insert title here</title>
-</head>
+
 <body>
+	<!-- header include -->
+	<jsp:include page="../include/header.jsp"></jsp:include>
+	
 	<h2>회원정보</h2>
 	<form name="form1" method="post">
 		<table border="1" width="400px">
@@ -56,5 +39,20 @@
 			</tr>
 		</table>
 	</form>
+	
+	<script>
+		$(function(){
+			$("#btnUpdate").click(function(){
+				document.form1.action = "/member/update";
+				document.form1.submit();
+			});
+			$("#btnDelete").click(function(){
+				if(confirm("삭제하시겠습니까?")) {
+					document.form1.action = "/member/delete";
+					document.form1.submit();
+				}
+			});
+		});
+	</script>
 </body>
 </html>

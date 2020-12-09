@@ -2,8 +2,6 @@
     pageEncoding="UTF-8"%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 	$(function(){
 		$("#button1").click(function(){
@@ -24,9 +22,10 @@
 		});
 	});
 </script>
-<title>Insert title here</title>
 </head>
 <body>
+	<!-- header include -->
+	<jsp:include page="../include/header.jsp"></jsp:include>
 	<h2>구구단계산</h2>
 	단을 입력하세요<br>
 	<input type="number" id="dan" value="3"><br>
