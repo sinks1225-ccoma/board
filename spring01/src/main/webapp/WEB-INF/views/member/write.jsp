@@ -8,22 +8,38 @@
 	
 	<h2>회원등록폼</h2>
 	<form name="form1" method="post" action="/member/insert">
-		<table border="0" width="400px">
+		<table>
+			<colgroup>
+				<col width="20%">
+				<col width="*">
+			</colgroup>
 			<tr>
 				<td>아이디</td>
-				<td><input name="userid" id="userid"></td>
+				<td>
+					<label for="userid"></label>
+					<input name="userid" id="userid" placeholder="아이디 입력">
+				</td>
 			</tr>
 			<tr>
 				<td>비밀번호</td>
-				<td><input type="password" name="passwd" id="passwd"></td>
+				<td>
+					<label for="passwd"></label>
+					<input type="password" name="passwd" id="passwd" placeholder="패스워드 입력">
+				</td>
 			</tr>
 			<tr>
 				<td>이름</td>
-				<td><input type="text" name="name" id="name"></td>
+				<td>
+					<label for="name"></label>
+					<input type="text" name="name" id="name" placeholder="이름 입력">
+				</td>
 			</tr>
 			<tr>
 				<td>이메일</td>
-				<td><input name="email" id="email"></td>
+				<td>
+					<label for="email"></label>
+					<input name="email" id="email" placeholder="이메일 입력">
+				</td>
 			</tr>
 		</table>
 		<div id="send">
@@ -32,6 +48,7 @@
 	</form>
 	<script>
 		function validationCheck(){
+			
 			// 아이디와 패스워드 정규식 검사
 			var check1 = /^[a-zA-Z0-9]{4,12}$/;
 			// 이메일 정규식 검사
@@ -52,6 +69,8 @@
 				em.focus();
 				return false;
 			}
+			
+			document.form1.submit();
 		}
 		
 		function check(check1, what, message) {

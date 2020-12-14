@@ -11,7 +11,13 @@
 	<div class="new_btn">
 		<a href="/member/write">신규회원등록</a>
 	</div>
-	<table border="1" width="700px">
+	<table>
+		<colgroup>
+			<col width="*">
+			<col width="15%">
+			<col width="20%">
+			<col width="10%">
+		</colgroup>
 		<tr>
 			<td>아이디</td>
 			<td>이름</td>
